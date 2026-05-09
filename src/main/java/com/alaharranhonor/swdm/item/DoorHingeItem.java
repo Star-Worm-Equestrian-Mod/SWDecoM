@@ -114,7 +114,7 @@ public class DoorHingeItem extends Item {
 
                 BlockPos size = selection.end().subtract(selection.start());
                 Direction[] axisDirs;
-                if (Math.abs(size.getX()) > 1) {
+                if (Math.abs(size.getX()) > 0) {
                     axisDirs = new Direction[] { Direction.SOUTH, Direction.NORTH };
                 } else {
                     axisDirs = new Direction[] { Direction.EAST, Direction.WEST };
